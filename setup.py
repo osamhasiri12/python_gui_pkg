@@ -10,7 +10,11 @@ setup(
     zip_safe=True,
     maintainer='Your Name',
     maintainer_email='your.email@example.com',
+<<<<<<< HEAD
     description='0',
+=======
+    description='A package for publishing goal poses from a GUI',
+>>>>>>> origin/main
     license='Apache License 2.0',
     tests_require=['pytest'],
     entry_points={

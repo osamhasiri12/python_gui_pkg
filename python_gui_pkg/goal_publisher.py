@@ -40,6 +40,7 @@ class GoalPublisherGUI(tk.Tk):
 
         self.title('Goal Publisher')
         self.configure(bg='white')
+<<<<<<< HEAD
         self.geometry('670x400') 
         
         
@@ -69,6 +70,25 @@ class GoalPublisherGUI(tk.Tk):
         exit_button.place(x=50,y=300)
         
         
+=======
+        self.geometry('400x400') 
+
+        room1_button = tk.Button(self, text='Room 1', command=self.publish_room1, bg='aquamarine3', fg='white', font=('Arial', 20), height=2, width=10)
+        room1_button.pack(pady=10)
+        room1_button.place(x=25,y=100)
+
+        room2_button = tk.Button(self, text='Room 2', command=self.publish_room2, bg='aquamarine3', fg='white', font=('Arial', 20), height=2, width=10)
+        room2_button.pack(pady=10)
+        room2_button.place(x=100,y=25)
+
+        room3_button = tk.Button(self, text='Room 3', command=self.publish_room3, bg='aquamarine3', fg='white', font=('Arial', 20), height=2, width=10)
+        room3_button.pack(pady=10)
+        room3_button.place(x=200,y=100)
+        
+        exit_button = tk.Button(self, text="Exit", command=exit,bg='red', fg='white', font=('Arial', 20), height=2, width=10)
+        exit_button.pack(pady=10)
+        exit_button.place(x=100,y=225)
+>>>>>>> origin/main
         
     def publish_room1(self):
         self.goal_publisher.publish_goal(self.goal_publisher.room1_pose)
